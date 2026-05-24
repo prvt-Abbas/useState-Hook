@@ -17,14 +17,11 @@ function App() {
   return (
     <>
      <h1 style={{ textAlign: 'center', backgroundColor: 'lightgray' }}>Counter App</h1>
-     <button style={{ margin: '5px' , backgroundColor: 'lightblue'  }} onClick={increment}>
-        increment
-      </button>
-      <p style={{fontSize: '1.2em' }}>counter = {count}</p>
-      <button style={{ margin: '5px' , backgroundColor: 'lightcoral' }} onClick={decrement}>
-        decrement
-      </button>
-      
+     <div className="counter" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px', marginTop: '20px' }}>
+      <button onClick={decrement} style={{ padding: '10px 20px', fontSize: '16px' }}>-</button>
+      <span style={{ fontSize: '24px' }}>{count}</span>
+      <button onClick={increment} style={{ padding: '10px 20px', fontSize: '16px' }}>+</button>
+     </div>
       
     </>
   )
